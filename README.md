@@ -50,11 +50,11 @@ Would prefer functional components, but feel free to use Class based as well, ba
 
 ## Workflow and Layout:
 At localhost:3000/ you will see the list of applicants (src/components/ApplicantList.js and src/components/Applicant.js). You can click on links to edit applicant's details, delete the applicant which will cause a modal to pop up for confirmation, and at the bottom you can click a button to add a new applicant.
-<br>
+<br><br>
 At localhost:3000/createApplicant you will see the form to create a new applicant to be saved to the database (src/components/ApplicantForm.js). You can complete the form and then click the submit button to save the new applicant.
-<br>
+<br><br>
 At localhost:3000/edit/5 you will see the form to edit the applicant with an ID of 5 (src/components/ApplicantForm.js). You can update anything about the applicant and then click save changes to save the changes.
-<br>
+<br><br>
 The mock JSON data is stored in api/database.json
 
 

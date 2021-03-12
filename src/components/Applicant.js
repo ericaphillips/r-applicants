@@ -25,7 +25,7 @@ export const Applicant = ({ applicant, props }) => {
                 {applicant.firstName} {applicant.lastName}
             </h4>
             <div className="applicant_occupation">Occupation: {applicant.occupation}</div>
-            <div className="applicant_ssn">SSN Info: {applicant.ssnInfo}</div>
+            <div className="applicant_ssn">SSN: {applicant.ssnInfo}</div>
             <div className="buttons">
             {/* Edit button changes url to edit/applicant's id */}
             <button class="button--edit" onClick={() => {

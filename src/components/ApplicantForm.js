@@ -3,6 +3,7 @@ adding a new one of updating an existing one
 */
 import React, { useContext, useEffect, useState } from "react"
 import { ApplicantContext } from "./ApplicantProvider"
+import "./Applicant.css"
 
 
 export const ApplicantForm = (props) => {
@@ -79,7 +80,6 @@ export const ApplicantForm = (props) => {
         <form className="applicantForm">
             {/* Form renders differently depending on if it is edit or add */}
             <h2 className="applicantForm__title">{toEdit ? "Edit Applicant's Details" : "Add Applicant"}</h2>
-            <form>
                 <div className="form-section">
                     <label htmlFor="firstName">Applicant's First Name: </label>
                     <input type="text" name="firstName" required autoFocus className="form-control"
@@ -116,8 +116,6 @@ export const ApplicantForm = (props) => {
                         onChange={handleApplicantEdit}
                     />
                 </div>
-
-            </form>
 
             <button type="submit"
                 onClick={event => {

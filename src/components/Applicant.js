@@ -1,6 +1,7 @@
 // HTML representation of Applicants, used in ApplicantList
 import React, { useContext } from "react"
 import { ApplicantContext } from "./ApplicantProvider"
+import "./Applicant.css"
 
 export const Applicant = ({ applicant, props }) => {
     // Get function to delete single applicant from the context
@@ -23,8 +24,9 @@ export const Applicant = ({ applicant, props }) => {
             <h4 className="applicant_name">
                 {applicant.firstName} {applicant.lastName}
             </h4>
-            <div className="applicant_occupation">{applicant.occupation}</div>
-            <div className="applicant_ssn">{applicant.ssnInfo}</div>
+            <div className="applicant_occupation">Occupation: {applicant.occupation}</div>
+            <div className="applicant_ssn">SSN Info: {applicant.ssnInfo}</div>
+            <div className="buttons">
             {/* Edit button changes url to edit/applicant's id */}
             <button class="button--edit" onClick={() => {
                 props.history.push(`/edit/${applicant.id}`)
@@ -34,6 +36,7 @@ export const Applicant = ({ applicant, props }) => {
             }}>
                 Delete Applicant
                 </button>
+                </div>
         </section>
     )
 }

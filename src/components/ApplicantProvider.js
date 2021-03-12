@@ -1,10 +1,10 @@
-import React, { useState } from "react"
-
 /* 
 This context is used by individual components
 that need data about applicants. Provides 
 fetch calls to create, read, update, and remove applicants
 */
+import React, { useState } from "react"
+
 
 // Context stores data. Export makes context available to other modules
 export const ApplicantContext = React.createContext()
@@ -15,7 +15,7 @@ export const ApplicantContext = React.createContext()
 export const ApplicantProvider = (props) => {
     // Need useState() hook to store data about components
     // Define a variable to hold the state of the component, and a function that updates it
-    const [ applicants, setApplicants ] = useState([])
+    const [applicants, setApplicants] = useState([])
 
     // Create functions to perform state transitions in the database
 
@@ -23,10 +23,10 @@ export const ApplicantProvider = (props) => {
     const getApplicants = () => {
         // Request the data for all applicants
         return fetch("http://localhost:8088/applicants")
-        // Convert the JSON string response to a JavaScript data structure
-        .then(response => response.json())
-        // Set state of applicants
-        .then(setApplicants)
+            // Convert the JSON string response to a JavaScript data structure
+            .then(response => response.json())
+            // Set state of applicants
+            .then(setApplicants)
     }
 
     // Function with fetch call to create an applicant
@@ -41,8 +41,8 @@ export const ApplicantProvider = (props) => {
             },
             body: JSON.stringify(applicant)
         })
-    // Update state of applicants after creation
-    .then(getApplicants)
+            // Update state of applicants after creation
+            .then(getApplicants)
     }
 
     // Function with fetch call to update applicant
@@ -55,16 +55,16 @@ export const ApplicantProvider = (props) => {
             },
             body: JSON.stringify(applicant)
         })
-        .then(getApplicants)
+            .then(getApplicants)
     }
 
     //Function with fetch call to delete an applicant
     const removeApplicant = applicantId => {
         return fetch(`http://localhost:8088/applicants/${applicantId}`, {
-        method: "DELETE"
+            method: "DELETE"
         })
-        .then(getApplicants)
-    } 
+            .then(getApplicants)
+    }
 
     // Return statement explicitly defines which functions can be used by other modules
 

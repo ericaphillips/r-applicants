@@ -26,7 +26,7 @@ export const ApplicantList = (props) => {
         <div>
             <h1>Applicants</h1>
             {
-                applicants.map(applicant => <Applicant key={applicant.id} applicant={applicant})
+                applicants.map(applicant => <Applicant key={applicant.id} applicant={applicant} />)
             }
         </div>
     )

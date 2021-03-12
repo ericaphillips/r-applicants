@@ -23,14 +23,16 @@ git clone git@github.com:ericaphillips/r-applicants.git
 cd r-applicants
 ```
 
-2. Launch the database:
+2. Launch the database from the api:
 ```sh
+cd api
 json-server -p 8088 -w database.json
 ```
 
 3. Launch the client:
 
 ```sh
+    cd .. (make sure you are in the root directory r-applicants)
     npm install
     npm start
 ```

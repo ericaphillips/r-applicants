@@ -14,7 +14,7 @@ export const ApplicantList = (props) => {
     const { applicants, getApplicants, deleteApplicant } = useContext(ApplicantContext)
 
     /* Component is mounted to the DOM,
-    React renders blnk HTML first,
+    React renders blank HTML first,
     then re-renders after getting applicants
     */
 
@@ -26,8 +26,12 @@ export const ApplicantList = (props) => {
         <div>
             <h1>Applicants</h1>
             {
-                applicants.map(applicant => <Applicant key={applicant.id} applicant={applicant} />)
+                applicants.map(applicant => <Applicant key={applicant.id} applicant={applicant} props={props}/> )
             }
+
+            <button class="button--addApplicant" onClick={() => props.history.push("/createApplicant")}>
+                Add new Applicant
+            </button>
         </div>
     )
 }

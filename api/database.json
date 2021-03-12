@@ -1,39 +1,25 @@
 {
-    "applicants": [
-        {
-            "id": 1,
-            "firstName": "Stella",
-            "lastName": "Smith",
-            "occupation": "Christmas Tree Enthusiast",
-            "ssnInfo": 123456789
-        },
-        {
-            "id": 2,
-            "firstName": "Gustav",
-            "lastName": "Orlando",
-            "occupation": "Competitive Eater",
-            "ssnInfo": 123456788 
-        },
-        {
-            "id": 3,
-            "firstName": "Helena",
-            "lastName": "Mountainia",
-            "occupation": "Instagram model",
-            "ssnInfo": 123456787 
-        },
-        {
-            "id": 4,
-            "firstName": "Dave",
-            "lastName": "Grohl",
-            "occupation": "Multi-Instrumentalist",
-            "ssnInfo": 123456784 
-        },
-        {
-            "id": 5,
-            "firstName": "Mario",
-            "lastName": "Super",
-            "occupation": "Adventurous Plumber",
-            "ssnInfo": 123456782 
-        }
-    ]
+  "applicants": [
+    {
+      "id": 5,
+      "firstName": "Mario",
+      "lastName": "Super",
+      "occupation": "Adventurous Plumber",
+      "ssnInfo": "123456787"
+    },
+    {
+      "firstName": "Jaron",
+      "lastName": "Tiger",
+      "occupation": "World Champion Bedazzler",
+      "ssnInfo": "748596773",
+      "id": 6
+    },
+    {
+      "id": 8,
+      "firstName": "Gustav",
+      "lastName": "Cronin",
+      "occupation": "Police Officer To The Stars",
+      "ssnInfo": "738475993"
+    }
+  ]
 }

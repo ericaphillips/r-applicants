@@ -82,7 +82,7 @@ export const ApplicantForm = (props) => {
             <h2 className="applicantForm__title">{toEdit ? "Edit Applicant's Details" : "Add Applicant"}</h2>
                 <div className="form-section">
                     <label htmlFor="firstName">Applicant's First Name: </label>
-                    <input type="text" name="firstName" required autoFocus className="form-control"
+                    <input type="text" name="firstName" autoFocus className="form-control"
                         placeholder="Applicant's first name"
                         value={applicant.firstName}
                         onChange={handleApplicantEdit}
@@ -91,7 +91,7 @@ export const ApplicantForm = (props) => {
 
                 <div className="form-section">
                     <label htmlFor="lastName">Applicant's Last Name: </label>
-                    <input type="text" name="lastName" required autoFocus className="form-control"
+                    <input type="text" name="lastName" autoFocus className="form-control"
                         placeholder="Applicant's last name"
                         value={applicant.lastName}
                         onChange={handleApplicantEdit}
@@ -100,17 +100,16 @@ export const ApplicantForm = (props) => {
 
                 <div className="form-section">
                     <label htmlFor="occupation">Applicant's Occupation: </label>
-                    <input type="text" name="occupation" required autoFocus className="form-control"
+                    <input type="text" name="occupation" autoFocus className="form-control"
                         placeholder="Applicant's occupation"
                         value={applicant.occupation}
                         onChange={handleApplicantEdit}
-                        required
                     />
                 </div>
 
                 <div className="form-section">
                     <label htmlFor="ssnInfo">Applicant's SSN Information: </label>
-                    <input type="number" min="1" required name="ssnInfo" required autoFocus className="form-control"
+                    <input type="number" name="ssnInfo" required autoFocus className="form-control"
                         placeholder="Applicant's SSN"
                         value={applicant.ssnInfo}
                         onChange={handleApplicantEdit}

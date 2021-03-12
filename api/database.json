@@ -5,21 +5,28 @@
       "firstName": "Mario",
       "lastName": "Super",
       "occupation": "Adventurous Plumber",
-      "ssnInfo": "123456787"
+      "ssnInfo": 123456787
     },
     {
       "firstName": "Jaron",
       "lastName": "Tiger",
       "occupation": "World Champion Bedazzler",
-      "ssnInfo": "748596773",
+      "ssnInfo": 748596773,
       "id": 6
     },
     {
       "id": 8,
       "firstName": "Gustav",
-      "lastName": "Cronin",
+      "lastName": "Crowley",
       "occupation": "Police Officer To The Stars",
-      "ssnInfo": "738475993"
+      "ssnInfo": 738475993
+    },
+    {
+      "id": 9,
+      "firstName": "Stella",
+      "lastName": "Smith",
+      "occupation": "Professional Sniffer",
+      "ssnInfo": 8884447736
     }
   ]
 }

@@ -1,6 +1,6 @@
-// List of applicants. Renders on /applicants
+// List of applicants
 import React, { useContext, useEffect, useState } from "react"
-import { ApplicantContext } from "./ApplicantProvider" 
+import { ApplicantContext } from "./ApplicantProvider"
 import { Applicant } from "./Applicant"
 
 /* 
@@ -10,14 +10,13 @@ a property object to the applicant
 
 // Creates a list of applicants to be viewed by user
 export const ApplicantList = (props) => {
-    // Get applicants state variable and functinos to see all and delete single applicants
+    // Get applicants state variable and functions to see all and delete single applicants
     const { applicants, getApplicants, deleteApplicant } = useContext(ApplicantContext)
 
     /* Component is mounted to the DOM,
     React renders blank HTML first,
     then re-renders after getting applicants
     */
-
     useEffect(() => {
         getApplicants()
     }, [])
@@ -25,8 +24,10 @@ export const ApplicantList = (props) => {
     return (
         <div>
             <h1>Applicants</h1>
+            {/* Iterates through the list of applicants to show the HTML representations
+            from Applicant.js */}
             {
-                applicants.map(applicant => <Applicant key={applicant.id} applicant={applicant} props={props}/> )
+                applicants.map(applicant => <Applicant key={applicant.id} applicant={applicant} props={props} />)
             }
 
             <button class="button--addApplicant" onClick={() => props.history.push("/createApplicant")}>

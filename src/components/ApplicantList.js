@@ -2,6 +2,7 @@
 import React, { useContext, useEffect, useState } from "react"
 import { ApplicantContext } from "./ApplicantProvider"
 import { Applicant } from "./Applicant"
+import "./Applicant.css"
 
 /* 
 Add props as a parameter because we're passing
@@ -23,16 +24,19 @@ export const ApplicantList = (props) => {
 
     return (
         <div>
+            <div className="topOfPage">
             <h1>Applicants</h1>
+            </div>
             {/* Iterates through the list of applicants to show the HTML representations
             from Applicant.js */}
+            <div className="applicantList">
             {
                 applicants.map(applicant => <Applicant key={applicant.id} applicant={applicant} props={props} />)
             }
-
-            <button class="button--addApplicant" onClick={() => props.history.push("/createApplicant")}>
+            <button class="button--add" onClick={() => props.history.push("/createApplicant")}>
                 Add new Applicant
             </button>
+            </div>
         </div>
     )
 }

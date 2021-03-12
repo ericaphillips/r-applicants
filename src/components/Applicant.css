@@ -1,0 +1,128 @@
+h1 {
+    text-align: center ;
+    color: #2E232E;
+}
+
+.topOfPage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;  
+}
+
+.applicantList {
+    text-align: center 
+}
+
+.applicant_occupation {
+    padding-bottom: 5px;
+}
+
+.h4 {
+    padding-bottom: 10px;
+}
+
+.applicant {
+    border-radius: 2px;
+    border: 2px solid #d5e5f2;
+    margin-top: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 30px;
+    color: #2E232E;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px; 
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+.button--add {
+    outline: none;
+    background: none;
+    transition: .5s;
+    border-radius: 2px;
+    padding: 5px;
+    margin: 7px;
+    border: 1px solid #2E232E;
+}
+
+.button--add:hover {
+  
+    transform:scale(1.05); 
+    border: none;
+}
+
+.button--delete {
+    outline: none;
+    background: none;
+    transition: .5s;
+    border-radius: 2px;
+    padding: 5px;
+    margin: 7px;
+    border: .5px solid #f93767;
+    color: #f93767;
+}
+
+.button--delete:hover {
+    border: none;
+}
+
+.button--edit {
+    outline: none;
+    background: none;
+    transition: .5s;
+    border-radius: 2px;
+    padding: 5px;
+    margin: 7px;
+    border: 1px solid #2E232E;
+}
+
+.button--edit:hover {
+    border: none;
+}
+
+.button--save {
+    outline: none;
+    background: none;
+    transition: .5s;
+    border-radius: 2px;
+    padding: 5px;
+    margin: 7px;
+    border: 1px solid #2E232E;
+}
+
+.button--save:hover {
+    border: none;
+}
+
+.button--cancel {
+    outline: none;
+    background: none;
+    transition: .5s;
+    border-radius: 2px;
+    padding: 5px;
+    margin: 7px;
+    border: 1px solid #2E232E;
+}
+
+.button--cancel:hover {
+    border: none;
+}
+
+
+.form-section {
+    margin: 10px;
+    padding: 10px;
+}
+
+.applicantForm {
+    border: 2px solid #62e4cc;
+    margin-top: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+    color: #2E232E;
+    padding-left: 5px;
+    text-align: center;
+}

@@ -21,6 +21,7 @@ You will also see any lint errors in the console.
 ```sh
 git clone git@github.com:ericaphillips/r-applicants.git
 cd r-applicants
+npm install react-router-dom
 ```
 
 2. Launch the database from the api:
